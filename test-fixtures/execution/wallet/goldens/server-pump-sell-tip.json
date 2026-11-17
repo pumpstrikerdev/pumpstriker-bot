@@ -1,0 +1,31 @@
+{
+  "_about": "Server-path golden (FIX-PUMP, 2026-11-06): the serialized message the PF-direct route signs for pump's 2026-04-28 layout (buy_exact_sol_in 18 accounts and 25 bytes, sell 16 accounts), Math.random pinned to 0 (fee recipient [0] of its list, buyback recipient [0], Sender tip account 1). Keys are fixtureKey(i) indices (base58 of sha256 of \"ps-fixture-\" + i, computed at test time); pump's fixed accounts are pinned against mainnet by pump-chain-layout.test.ts.",
+  "case": "server-pump-sell-tip",
+  "inputs": {
+    "signerSeed": "sha256(\"ps-fixture-w5-signer\")",
+    "blockhash": "base58(sha256(\"ps-fixture-w5-blockhash\"))",
+    "mintKey": 31,
+    "creatorKey": 3,
+    "call": "pumpfunSell(signer, mint, 1000000, 300, 100000, antiMev true)",
+    "curve": "166 bytes, SOL (zero key), classic Token mint"
+  },
+  "messageB64": [
+    "gAEAChJB0g8GzJgp1cPOQndoy3cCUipMvVjVHA2nXOwVFBpRuUrC+NDdXLyX",
+    "4yicGXy1BipU89lWuc5uURX5ZWeqXLPmQODFxjECdTrZUhN7NJGvw0rT/EEe",
+    "UYAloLPxvPQXGRu1gwI4BXoNkEVomF2pBXTQx/98BJx/iA3SjrzaiIzHBKAs",
+    "cBM0rkY7ggsVpJtfg14XeQ1/OyTApE0SYbN67iEnlzi1Qh6z0Q48L8QvSz3n",
+    "6nSX2NUgvXA6aYloUsBPybdDnmUQwD1l+tkx6J0Evgu3DVGXH1HEFfs0TAfb",
+    "QZ8hIi7ue4kqTvikSqv5cMwON+r3JnZ1FwwdaZzTEnRJbFQ/AwZGb+UhFzL/",
+    "7K26csOb57yM5bvF9xJrLEObOkAAAAABVuD2k2Zaz0TbFWi/F1uqUYnLl/XS",
+    "/ztlXSu2/W0YsDqGXmnuD1SAyrz2Y1fk3C8Y1Y1Fwep0ifs3I9l5PHKmhdii",
+    "FIbm7tbNfT0IxmJ/RBrTINa+Ql4Uz2FAIhKM5EcAAAAAAAAAAAAAAAAAAAAA",
+    "AAAAAAAAAAAAAAAAAAAAAAbd9uHXZaGT2cvhRs7reawctIXtX1s3kTqM9YV+",
+    "/wCprPE26wH8HE6IPSPItYRKtZo39mrdV8XprDtT4FnTXGRvmrSk8ZWNwKnJ",
+    "TD+3LAeZWEPtpIXjok8QxpOZ+BmUDww1/6kFWo5Wjaj3vAdWFSdM8ckspB9A",
+    "AJxRaqQUwnxwfaaiK1kapQx14F0Hpa+io/ypmTYS43yRcmeLNbpZ4Sc/1iJ2",
+    "XaCE01+AcoWL5RH2VNgkAuUqNFIOK2IkZHnNqwQIAAUCQA0DAAgACQOghgEA",
+    "AAAAAAkQCgELAgMEAAwFDQ4JDxARBhgz5oWkAX+DrUBCDwAAAAAAGAAAAAAA",
+    "AAAMAgAHDAIAAABADQMAAAAAAAA="
+  ],
+  "sha256": "9ae6a5144e03b133517f6656cd0ca75053710e1d652de21adca95686964f9b70"
+}

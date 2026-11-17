@@ -1,0 +1,36 @@
+{
+  "_about": "Server-path golden: the serialized message the SERVER path signs, recorded before the extraction into the *-ix.ts files. Keys are fixtureKey(i) indices (base58 of sha256 of \"ps-fixture-\" + i, computed at test time).",
+  "case": "server-pumpswap-sell-tip",
+  "inputs": {
+    "signerSeed": "sha256(\"ps-fixture-w5-signer\")",
+    "blockhash": "base58(sha256(\"ps-fixture-w5-blockhash\"))",
+    "mintKey": 32,
+    "creatorKey": 3,
+    "poolBaseVaultKey": 10,
+    "poolQuoteVaultKey": 11,
+    "coinCreatorKey": 12,
+    "call": "pumpswapSell(signer, mint, 1000000, 300, 100000, antiMev true, testOnlyRunDisabledRoute)"
+  },
+  "messageB64": [
+    "gAEADRZB0g8GzJgp1cPOQndoy3cCUipMvVjVHA2nXOwVFBpRuRfTXB1BU685",
+    "ec0XQwDDX0hutrJnUxf2fJJEKVlaX8KJe335Q/YzaZoYO8/5frfMxATGHYgW",
+    "MJsfyHEi5vLyGhdizta8jOO6BXRnZASBIVrRRUe9pM1NlMLTFsSW5Bsbkcbx",
+    "4v7zPImdFUnjHxbcTk2iQZAEr+Pj42r7efKrsWn9r6+m+9vcR849NLhmojvd",
+    "KHhg/bitFUiLkzQ3TslZulN32RWVX4iAcxzrSnWgzJbBdPpAlcTh2ZZ6z8Qo",
+    "Ra5nrqHHwB5mZzrb26ncWhDJFNScVYbLqJY5pGJdS1eIz/cALu57iSpO+KRK",
+    "q/lwzA436vcmdnUXDB1pnNMSdElsVD8DBkZv5SEXMv/srbpyw5vnvIzlu8X3",
+    "EmssQ5s6QAAAAIyXJY9OJInxuz0QKRSODYMLWhOZ2v8QhASOe9jb6fhZBpuI",
+    "V/6rgYT7aH9jRhjANdrEOdwa6ztVmKDwAAAAAAEAAAAAAAAAAAAAAAAAAAAA",
+    "AAAAAAAAAAAAAAAAAAAAAAbd9uHXZaGT2cvhRs7reawctIXtX1s3kTqM9YV+",
+    "/wCpDBTe/IJexnaUJQgYu2VAZfQpjTFW1XG01PgJDBjpqGOJC6ZE/h9Vqhnx",
+    "HNLS7BTTIztuCkvq7vcraYWOIeFw1qLD1LB6c+e1TiRQ5Iyn4tsiNdTggZyj",
+    "RRjIuC+ela2LSsL40N1cvJfjKJwZfLUGKlTz2Va5zm5RFfllZ6pcs+blSnCV",
+    "KIOfYcC5uGB5iRwTkhbkenG2L7c77HIWlFh0Xj2P1sIbhNNvR/fgRF7r9hBl",
+    "HTSJxoILOavMh04J5hnHQSRuzH14/oHkF3OkaWVBmTeSOgdkR5ffbz61FEJg",
+    "EMsMNf+pBVqOVo2o97wHVhUnTPHJLKQfQACcUWqkFMJ8cD/WInZdoITTX4By",
+    "hYvlEfZU2CQC5So0Ug4rYiRkec2rBgkABQKQ0AMACQAJA6CGAQAAAAAACgYA",
+    "AQALDA0BAQ4VAgAPEAsDAQQFEQYNDQwKEg4HExQVGDPmhaQBf4OtQEIPAAAA",
+    "AABdAQAAAAAAAA0DAQAAAQkMAgAIDAIAAABADQMAAAAAAAA="
+  ],
+  "sha256": "d37c5798f51e4d756b59cd0d74684334e4efc7e0b7a8573275afb5b5e354b395"
+}

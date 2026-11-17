@@ -1,0 +1,37 @@
+{
+  "_about": "Server-path golden: the serialized message the SERVER path signs, recorded before the extraction into the *-ix.ts files. Keys are fixtureKey(i) indices (base58 of sha256 of \"ps-fixture-\" + i, computed at test time).",
+  "case": "server-pumpswap-buy",
+  "inputs": {
+    "signerSeed": "sha256(\"ps-fixture-w5-signer\")",
+    "blockhash": "base58(sha256(\"ps-fixture-w5-blockhash\"))",
+    "mintKey": 32,
+    "creatorKey": 3,
+    "poolBaseVaultKey": 10,
+    "poolQuoteVaultKey": 11,
+    "coinCreatorKey": 12,
+    "call": "pumpswapBuy(signer, mint, 0.05, 300, 100000, antiMev false, testOnlyRunDisabledRoute)"
+  },
+  "messageB64": [
+    "gAEADhdB0g8GzJgp1cPOQndoy3cCUipMvVjVHA2nXOwVFBpRuRfTXB1BU685",
+    "ec0XQwDDX0hutrJnUxf2fJJEKVlaX8KJYs7WvIzjugV0Z2QEgSFa0UVHvaTN",
+    "TZTC0xbEluQbG5F7fflD9jNpmhg7z/l+t8zEBMYdiBYwmx/IcSLm8vIaF8bx",
+    "4v7zPImdFUnjHxbcTk2iQZAEr+Pj42r7efKrsWn9r6+m+9vcR849NLhmojvd",
+    "KHhg/bitFUiLkzQ3TslZulN32RWVX4iAcxzrSnWgzJbBdPpAlcTh2ZZ6z8Qo",
+    "Ra5nrqHHwB5mZzrb26ncWhDJFNScVYbLqJY5pGJdS1eIz/cAZUlLM9mvPTiJ",
+    "VfiQzPpSWU8ZWXJu+e8UFhrHlPXwVeUDBkZv5SEXMv/srbpyw5vnvIzlu8X3",
+    "EmssQ5s6QAAAAIyXJY9OJInxuz0QKRSODYMLWhOZ2v8QhASOe9jb6fhZBpuI",
+    "V/6rgYT7aH9jRhjANdrEOdwa6ztVmKDwAAAAAAEAAAAAAAAAAAAAAAAAAAAA",
+    "AAAAAAAAAAAAAAAAAAAAAAbd9uHXZaGT2cvhRs7reawctIXtX1s3kTqM9YV+",
+    "/wCposPUsHpz57VOJFDkjKfi2yI11OCBnKNFGMi4L56VrYsMFN78gl7GdpQl",
+    "CBi7ZUBl9CmNMVbVcbTU+AkMGOmoY4kLpkT+H1WqGfEc0tLsFNMjO24KS+ru",
+    "9ytphY4h4XDWSsL40N1cvJfjKJwZfLUGKlTz2Va5zm5RFfllZ6pcs+blSnCV",
+    "KIOfYcC5uGB5iRwTkhbkenG2L7c77HIWlFh0Xj2P1sIbhNNvR/fgRF7r9hBl",
+    "HTSJxoILOavMh04J5hnHo9e7En5YrcEspo+DQ37C4cP5gg3pPlj5F4opGN2q",
+    "97RBJG7MfXj+geQXc6RpZUGZN5I6B2RHl99vPrUUQmAQyww1/6kFWo5Wjaj3",
+    "vAdWFSdM8ckspB9AAJxRaqQUwnxwP9Yidl2ghNNfgHKFi+UR9lTYJALlKjRS",
+    "DitiJGR5zasICQAFApDQAwAJAAkDoIYBAAAAAAAKBgABAAsMDQEBCgYAAgAO",
+    "DA0BAQwCAAEMAgAAAODTEQMAAAAADQEBAREPFwMAEA4LAgEEBREGDQ0MChIP",
+    "BxMUCBUWGGYGPRIB2uvqe/wZth4AAADg0xEDAAAAAA0DAQAAAQkA"
+  ],
+  "sha256": "65a6451780dd118016be5aad808f3bacd7a5b1236031444582b6b936b94ec6af"
+}

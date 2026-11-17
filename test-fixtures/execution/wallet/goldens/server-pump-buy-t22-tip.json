@@ -1,0 +1,33 @@
+{
+  "_about": "Server-path golden (FIX-PUMP, 2026-11-06): the serialized message the PF-direct route signs for pump's 2026-04-28 layout (buy_exact_sol_in 18 accounts and 25 bytes, sell 16 accounts), Math.random pinned to 0 (fee recipient [0] of its list, buyback recipient [0], Sender tip account 1). Keys are fixtureKey(i) indices (base58 of sha256 of \"ps-fixture-\" + i, computed at test time); pump's fixed accounts are pinned against mainnet by pump-chain-layout.test.ts.",
+  "case": "server-pump-buy-t22-tip",
+  "inputs": {
+    "signerSeed": "sha256(\"ps-fixture-w5-signer\")",
+    "blockhash": "base58(sha256(\"ps-fixture-w5-blockhash\"))",
+    "mintKey": 33,
+    "creatorKey": 3,
+    "call": "pumpfunBuy(signer, mint, 0.05, 300, 100000, antiMev true)",
+    "curve": "166 bytes, SOL (zero key), Token-2022 mint (MetadataPointer, TokenMetadata)"
+  },
+  "messageB64": [
+    "gAEADBVB0g8GzJgp1cPOQndoy3cCUipMvVjVHA2nXOwVFBpRuQehfpMFOA3p",
+    "ePGOcAPiN4unWRvhIdN4Pm6c6vDIrW6OSsL40N1cvJfjKJwZfLUGKlTz2Va5",
+    "zm5RFfllZ6pcs+aA1YQsrVegpZOxZO5k8u+1sCpmUVP10/E89POEf0+t3zbw",
+    "hh0Xle9KaAihGp/z8BGYXHp+yzmVB6gvJONLvEU/lzi1Qh6z0Q48L8QvSz3n",
+    "6nSX2NUgvXA6aYloUsBPybdGsV16g65NtXpXuIhVNC+d9RE58ydN09cDG+7t",
+    "Zb+jzUOeZRDAPWX62THonQS+C7cNUZcfUcQV+zRMB9tBnyEiLu57iSpO+KRK",
+    "q/lwzA436vcmdnUXDB1pnNMSdElsVD8DBkZv5SEXMv/srbpyw5vnvIzlu8X3",
+    "EmssQ5s6QAAAAIyXJY9OJInxuz0QKRSODYMLWhOZ2v8QhASOe9jb6fhZ+v+V",
+    "bsE50WxUnEpfCpHEYNZBxSGicHIDEtJl5R+uArMAAAAAAAAAAAAAAAAAAAAA",
+    "AAAAAAAAAAAAAAAAAAAAAAbd9uHudY/eGEJdvORszdq2GvxNg7kNJ/69+SjY",
+    "oYv8AVbg9pNmWs9E2xVovxdbqlGJy5f10v87ZV0rtv1tGLA6hl5p7g9UgMq8",
+    "9mNX5NwvGNWNRcHqdIn7NyPZeTxypqzxNusB/BxOiD0jyLWESrWaN/Zq3VfF",
+    "6aw7U+BZ01xk+gkRpUhjQS1jH04HhwMpbANfDRMzoNnIg41ztxD+bi1vmrSk",
+    "8ZWNwKnJTD+3LAeZWEPtpIXjok8QxpOZ+BmUDww1/6kFWo5Wjaj3vAdWFSdM",
+    "8ckspB9AAJxRaqQUwnxwCsF2or97GKY5fUipQcnS1x9yPT6DShrYI5bHXCFQ",
+    "Su0/1iJ2XaCE01+AcoWL5RH2VNgkAuUqNFIOK2IkZHnNqwUJAAUCQA0DAAkA",
+    "CQOghgEAAAAAAAoGAAEACwwNAQEOEg8CCwMEAQAMDQUQDhEGEhMUBxk4/HQI",
+    "nt/NX4Dw+gIAAAAAjSLgPo4BAAABDAIACAwCAAAAQA0DAAAAAAAA"
+  ],
+  "sha256": "54a9b56adac68f9d887fc43ed76b1acc0794e3003fd4d8b0222f5566a032103f"
+}

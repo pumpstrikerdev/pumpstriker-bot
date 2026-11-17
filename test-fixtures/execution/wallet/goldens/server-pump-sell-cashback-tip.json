@@ -1,0 +1,32 @@
+{
+  "_about": "Server-path golden (FIX-PUMP, 2026-11-06): a cashback-coin sell, 17 accounts (user_volume_accumulator at 14, then bonding_curve_v2 and the buyback recipient). DERIVED FROM pump's docs and SDK 4.1.0 only: no mainnet fixture shows this shape, and the pre-sign simulation gates it. Math.random pinned to 0; keys are fixtureKey(i) indices.",
+  "case": "server-pump-sell-cashback-tip",
+  "inputs": {
+    "signerSeed": "sha256(\"ps-fixture-w5-signer\")",
+    "blockhash": "base58(sha256(\"ps-fixture-w5-blockhash\"))",
+    "mintKey": 35,
+    "creatorKey": 3,
+    "call": "pumpfunSell(signer, mint, 1000000, 300, 100000, antiMev true)",
+    "curve": "166 bytes, SOL (zero key), cashback (byte 82 = 1), Token-2022 mint"
+  },
+  "messageB64": [
+    "gAEAChNB0g8GzJgp1cPOQndoy3cCUipMvVjVHA2nXOwVFBpRuUrC+NDdXLyX",
+    "4yicGXy1BipU89lWuc5uURX5ZWeqXLPmMy7jUWbsICRQU7G1qlQXA0WkQv39",
+    "Y5/12pzaDSusdDNXEzFG9b/zdXAQUZaZ0VbAPFzEgxRQIT9+1vF9GGkog+zy",
+    "h3+O3B2c5Z5QD+YobcofcBARtjfti2fAdMhpsm2Tlzi1Qh6z0Q48L8QvSz3n",
+    "6nSX2NUgvXA6aYloUsBPybdGsV16g65NtXpXuIhVNC+d9RE58ydN09cDG+7t",
+    "Zb+jzUOeZRDAPWX62THonQS+C7cNUZcfUcQV+zRMB9tBnyEiLu57iSpO+KRK",
+    "q/lwzA436vcmdnUXDB1pnNMSdElsVD8DBkZv5SEXMv/srbpyw5vnvIzlu8X3",
+    "EmssQ5s6QAAAAAFW4PaTZlrPRNsVaL8XW6pRicuX9dL/O2VdK7b9bRiwOoZe",
+    "ae4PVIDKvPZjV+TcLxjVjUXB6nSJ+zcj2Xk8cqa2kO/kb8R2/PLnZTJ2/Z09",
+    "cX/3TKrVYbkcpsa2eoBV7wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "AAAABt324e51j94YQl285GzN2rYa/E2DuQ0n/r35KNihi/ys8TbrAfwcTog9",
+    "I8i1hEq1mjf2at1XxemsO1PgWdNcZG+atKTxlY3AqclMP7csB5lYQ+2kheOi",
+    "TxDGk5n4GZQPDDX/qQVajlaNqPe8B1YVJ0zxySykH0AAnFFqpBTCfHA0BSfo",
+    "gRXt+XB9CzwnXFLqTdQPnfUnmTsEOvot9qCpmD/WInZdoITTX4ByhYvlEfZU",
+    "2CQC5So0Ug4rYiRkec2rBAkABQJADQMACQAJA6CGAQAAAAAAChELAQwCAwQA",
+    "DQUODwoQEQYSBxgz5oWkAX+DrUBCDwAAAAAAGAAAAAAAAAANAgAIDAIAAABA",
+    "DQMAAAAAAAA="
+  ],
+  "sha256": "3941af4c021c1e42a6664e99a2e018023d4c12f8798f1768ebdee10e275a36cb"
+}

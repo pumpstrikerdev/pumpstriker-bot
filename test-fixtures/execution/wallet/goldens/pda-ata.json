@@ -1,0 +1,247 @@
+{
+  "_about": "PDA/ATA goldens, generated with @solana/web3.js findProgramAddressSync. keys are fixtureKey(i) = base58(sha256(\"ps-fixture-\" + i)); programs are named (token, token2022, ata, pump, pumpswap, fee); addresses and seeds are base64 of the raw bytes; no base58 appears. The dashboard page-side pda.ts reproduces every entry.",
+  "atas": [
+    {
+      "owner": 1,
+      "mint": 31,
+      "program": "token",
+      "address": "VZG91u7EmDhxdoxHk7qvB6xTooSHJRiFTo9qrNpb3xE="
+    },
+    {
+      "owner": 1,
+      "mint": 31,
+      "program": "token2022",
+      "address": "zNm/C9gxBUdAWVBOi0GLBzSMzF7mnR+txh5oX0hsXlk="
+    },
+    {
+      "owner": 1,
+      "mint": 32,
+      "program": "token",
+      "address": "WggguVnjcD3MfYV+w3/Fd2l80UUfKjWzd87cy+JVgfk="
+    },
+    {
+      "owner": 1,
+      "mint": 32,
+      "program": "token2022",
+      "address": "rYFgYuCEedzL4lAiUXL21Jve6+0kUEKMH0hq+/biBVk="
+    },
+    {
+      "owner": 1,
+      "mint": 33,
+      "program": "token",
+      "address": "z69mfyB+3HpiEG4Q4LmGn44iHWLIpxbIqbzmLZ8q1hA="
+    },
+    {
+      "owner": 1,
+      "mint": 33,
+      "program": "token2022",
+      "address": "CzwmVz9TrynaHgYeNYrGQX7xlEwNIZc2zshaL9IY0fw="
+    },
+    {
+      "owner": 1,
+      "mint": "wsol",
+      "program": "token",
+      "address": "auPNICtOtUqugeW3crwSOJ6ybmDzjcckqK5G2om2f0U="
+    },
+    {
+      "owner": 2,
+      "mint": 31,
+      "program": "token",
+      "address": "AHMCY+Wp4ge/hzDb7gjs/t6GqhBhNob5cDSNgFotCKE="
+    },
+    {
+      "owner": 2,
+      "mint": 31,
+      "program": "token2022",
+      "address": "9p4jG9ETOyAoqYvLZd09+bQI+LNPk1a0FlxmdHahDfk="
+    },
+    {
+      "owner": 2,
+      "mint": 32,
+      "program": "token",
+      "address": "JExq9UVqnouYLnFrRs4+A8+5i8OcFeohhf9S/Xgcfhc="
+    },
+    {
+      "owner": 2,
+      "mint": 32,
+      "program": "token2022",
+      "address": "Ll3lAs5YbuRNCvcRSIPW1lmHFz7WJVWBYVCt6fphwaA="
+    },
+    {
+      "owner": 2,
+      "mint": 33,
+      "program": "token",
+      "address": "v6/Bgep1nQ7btsUIjCV9BaZkZStnY6SfUi9QSqkn3QE="
+    },
+    {
+      "owner": 2,
+      "mint": 33,
+      "program": "token2022",
+      "address": "YZZYt0MUpw6H31uEzfhGs+uMTAT8R0HzWbZv8PChY2c="
+    },
+    {
+      "owner": 2,
+      "mint": "wsol",
+      "program": "token",
+      "address": "dztHylv9aBiUZYusCdez6JFLMiLNBPCZj87sZRKORWk="
+    }
+  ],
+  "pdas": [
+    {
+      "name": "pump bonding_curve",
+      "program": "pump",
+      "seedsDescription": [
+        "utf8 bonding-curve",
+        "key 31"
+      ],
+      "seedsB64": [
+        "Ym9uZGluZy1jdXJ2ZQ==",
+        "hdiiFIbm7tbNfT0IxmJ/RBrTINa+Ql4Uz2FAIhKM5Ec="
+      ],
+      "address": "QODFxjECdTrZUhN7NJGvw0rT/EEeUYAloLPxvPQXGRs=",
+      "bump": 255
+    },
+    {
+      "name": "pump creator_vault",
+      "program": "pump",
+      "seedsDescription": [
+        "utf8 creator-vault",
+        "key 3"
+      ],
+      "seedsB64": [
+        "Y3JlYXRvci12YXVsdA==",
+        "X0vcBOWHeB7FrDYOXwlNsTiBpeMWFyD7nZP4uGGXgLM="
+      ],
+      "address": "lzi1Qh6z0Q48L8QvSz3n6nSX2NUgvXA6aYloUsBPybc=",
+      "bump": 255
+    },
+    {
+      "name": "pump global_volume_accumulator",
+      "program": "pump",
+      "seedsDescription": [
+        "utf8 global_volume_accumulator"
+      ],
+      "seedsB64": [
+        "Z2xvYmFsX3ZvbHVtZV9hY2N1bXVsYXRvcg=="
+      ],
+      "address": "+gkRpUhjQS1jH04HhwMpbANfDRMzoNnIg41ztxD+bi0=",
+      "bump": 255
+    },
+    {
+      "name": "pump user_volume_accumulator",
+      "program": "pump",
+      "seedsDescription": [
+        "utf8 user_volume_accumulator",
+        "key 1"
+      ],
+      "seedsB64": [
+        "dXNlcl92b2x1bWVfYWNjdW11bGF0b3I=",
+        "2LXe67F/zWVz55lwK2vLWZQX2Bfgpytz5XXUcOAW9YE="
+      ],
+      "address": "W6mREZYs9IkZ/IzAHNhhMtp3ko6Ybz4TCsSmCtCeJ98=",
+      "bump": 255
+    },
+    {
+      "name": "pump pool_authority",
+      "program": "pump",
+      "seedsDescription": [
+        "utf8 pool-authority",
+        "key 32"
+      ],
+      "seedsB64": [
+        "cG9vbC1hdXRob3JpdHk=",
+        "osPUsHpz57VOJFDkjKfi2yI11OCBnKNFGMi4L56VrYs="
+      ],
+      "address": "irjpefqIFoUUlbcog5ayYASJ8JfnFKvH4Rr4thuuUEs=",
+      "bump": 255
+    },
+    {
+      "name": "pump fee_config",
+      "program": "fee",
+      "seedsDescription": [
+        "utf8 fee_config",
+        "fee config seed (32 bytes)"
+      ],
+      "seedsB64": [
+        "ZmVlX2NvbmZpZw==",
+        "AVbg9pNmWs9E2xVovxdbqlGJy5f10v87ZV0rtv1tGLA="
+      ],
+      "address": "b5q0pPGVjcCpyUw/tywHmVhD7aSF46JPEMaTmfgZlA8=",
+      "bump": 253
+    },
+    {
+      "name": "pumpswap canonical pool",
+      "program": "pumpswap",
+      "seedsDescription": [
+        "utf8 pool",
+        "u16le 0",
+        "pool_authority of key 32",
+        "key 32",
+        "wsol mint"
+      ],
+      "seedsB64": [
+        "cG9vbA==",
+        "AAA=",
+        "irjpefqIFoUUlbcog5ayYASJ8JfnFKvH4Rr4thuuUEs=",
+        "osPUsHpz57VOJFDkjKfi2yI11OCBnKNFGMi4L56VrYs=",
+        "BpuIV/6rgYT7aH9jRhjANdrEOdwa6ztVmKDwAAAAAAE="
+      ],
+      "address": "e335Q/YzaZoYO8/5frfMxATGHYgWMJsfyHEi5vLyGhc=",
+      "bump": 254
+    },
+    {
+      "name": "pumpswap coin creator vault authority",
+      "program": "pumpswap",
+      "seedsDescription": [
+        "utf8 creator_vault",
+        "key 12"
+      ],
+      "seedsB64": [
+        "Y3JlYXRvcl92YXVsdA==",
+        "E5evGvCNWNcOHxgwRjKIo4uM5I3EHiLYK/37hUgPSpU="
+      ],
+      "address": "PY/WwhuE029H9+BEXuv2EGUdNInGggs5q8yHTgnmGcc=",
+      "bump": 254
+    },
+    {
+      "name": "pumpswap user_volume_accumulator",
+      "program": "pumpswap",
+      "seedsDescription": [
+        "utf8 user_volume_accumulator",
+        "key 1"
+      ],
+      "seedsB64": [
+        "dXNlcl92b2x1bWVfYWNjdW11bGF0b3I=",
+        "2LXe67F/zWVz55lwK2vLWZQX2Bfgpytz5XXUcOAW9YE="
+      ],
+      "address": "Ik0/L3fM9VSB1Lekxxknz8x74CDfXpeqCNbAcS1zv44=",
+      "bump": 254
+    },
+    {
+      "name": "pumpswap global_volume_accumulator",
+      "program": "pumpswap",
+      "seedsDescription": [
+        "utf8 global_volume_accumulator"
+      ],
+      "seedsB64": [
+        "Z2xvYmFsX3ZvbHVtZV9hY2N1bXVsYXRvcg=="
+      ],
+      "address": "o9e7En5YrcEspo+DQ37C4cP5gg3pPlj5F4opGN2q97Q=",
+      "bump": 255
+    },
+    {
+      "name": "pumpswap fee_config",
+      "program": "fee",
+      "seedsDescription": [
+        "utf8 fee_config",
+        "program pumpswap"
+      ],
+      "seedsB64": [
+        "ZmVlX2NvbmZpZw==",
+        "DBTe/IJexnaUJQgYu2VAZfQpjTFW1XG01PgJDBjpqGM="
+      ],
+      "address": "QSRuzH14/oHkF3OkaWVBmTeSOgdkR5ffbz61FEJgEMs=",
+      "bump": 255
+    }
+  ]
+}

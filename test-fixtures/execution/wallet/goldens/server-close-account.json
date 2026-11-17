@@ -1,0 +1,19 @@
+{
+  "_about": "Server-path golden: the serialized message the SERVER path signs, recorded before the extraction into the *-ix.ts files. Keys are fixtureKey(i) indices (base58 of sha256 of \"ps-fixture-\" + i, computed at test time).",
+  "case": "server-close-account",
+  "inputs": {
+    "signerSeed": "sha256(\"ps-fixture-w5-signer\")",
+    "blockhash": "base58(sha256(\"ps-fixture-w5-blockhash\"))",
+    "mintKey": 31,
+    "creatorKey": 3,
+    "call": "buildCloseAccountTx(signer, ata(owner, mint, Token), Token program, blockhash)"
+  },
+  "messageB64": [
+    "gAEAAgRB0g8GzJgp1cPOQndoy3cCUipMvVjVHA2nXOwVFBpRuaAscBM0rkY7",
+    "ggsVpJtfg14XeQ1/OyTApE0SYbN67iEnAwZGb+UhFzL/7K26csOb57yM5bvF",
+    "9xJrLEObOkAAAAAG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqT/W",
+    "InZdoITTX4ByhYvlEfZU2CQC5So0Ug4rYiRkec2rAwIABQIwdQAAAgAJAxAn",
+    "AAAAAAAAAwMBAAABCQA="
+  ],
+  "sha256": "3baa474dc8965e275370f394ae9a3bb9f7ceb7b47badb9f5f26197dc6f4078ab"
+}

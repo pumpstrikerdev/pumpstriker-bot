@@ -1,0 +1,38 @@
+{
+  "_about": "Server-path golden: the serialized message the SERVER path signs, recorded before the extraction into the *-ix.ts files. Keys are fixtureKey(i) indices (base58 of sha256 of \"ps-fixture-\" + i, computed at test time).",
+  "case": "server-pumpswap-buy-tip",
+  "inputs": {
+    "signerSeed": "sha256(\"ps-fixture-w5-signer\")",
+    "blockhash": "base58(sha256(\"ps-fixture-w5-blockhash\"))",
+    "mintKey": 32,
+    "creatorKey": 3,
+    "poolBaseVaultKey": 10,
+    "poolQuoteVaultKey": 11,
+    "coinCreatorKey": 12,
+    "call": "pumpswapBuy(signer, mint, 0.05, 300, 100000, antiMev true, testOnlyRunDisabledRoute)"
+  },
+  "messageB64": [
+    "gAEADhhB0g8GzJgp1cPOQndoy3cCUipMvVjVHA2nXOwVFBpRuRfTXB1BU685",
+    "ec0XQwDDX0hutrJnUxf2fJJEKVlaX8KJYs7WvIzjugV0Z2QEgSFa0UVHvaTN",
+    "TZTC0xbEluQbG5F7fflD9jNpmhg7z/l+t8zEBMYdiBYwmx/IcSLm8vIaF8bx",
+    "4v7zPImdFUnjHxbcTk2iQZAEr+Pj42r7efKrsWn9r6+m+9vcR849NLhmojvd",
+    "KHhg/bitFUiLkzQ3TslZulN32RWVX4iAcxzrSnWgzJbBdPpAlcTh2ZZ6z8Qo",
+    "Ra5nrqHHwB5mZzrb26ncWhDJFNScVYbLqJY5pGJdS1eIz/cAZUlLM9mvPTiJ",
+    "VfiQzPpSWU8ZWXJu+e8UFhrHlPXwVeUu7nuJKk74pEqr+XDMDjfq9yZ2dRcM",
+    "HWmc0xJ0SWxUPwMGRm/lIRcy/+ytunLDm+e8jOW7xfcSayxDmzpAAAAAjJcl",
+    "j04kifG7PRApFI4NgwtaE5na/xCEBI572Nvp+FkGm4hX/quBhPtof2NGGMA1",
+    "2sQ53BrrO1WYoPAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "AAAABt324ddloZPZy+FGzut5rBy0he1fWzeROoz1hX7/AKmiw9SwenPntU4k",
+    "UOSMp+LbIjXU4IGco0UYyLgvnpWtiwwU3vyCXsZ2lCUIGLtlQGX0KY0xVtVx",
+    "tNT4CQwY6ahjiQumRP4fVaoZ8RzS0uwU0yM7bgpL6u73K2mFjiHhcNZKwvjQ",
+    "3Vy8l+MonBl8tQYqVPPZVrnOblEV+WVnqlyz5uVKcJUog59hwLm4YHmJHBOS",
+    "FuR6cbYvtzvschaUWHRePY/WwhuE029H9+BEXuv2EGUdNInGggs5q8yHTgnm",
+    "Gcej17sSflitwSymj4NDfsLhw/mCDek+WPkXiikY3ar3tEEkbsx9eP6B5Bdz",
+    "pGllQZk3kjoHZEeX328+tRRCYBDLDDX/qQVajlaNqPe8B1YVJ0zxySykH0AA",
+    "nFFqpBTCfHA/1iJ2XaCE01+AcoWL5RH2VNgkAuUqNFIOK2IkZHnNqwkKAAUC",
+    "kNADAAoACQOghgEAAAAAAAsGAAEADA0OAQELBgACAA8NDgEBDQIAAQwCAAAA",
+    "4NMRAwAAAAAOAQEBERAXAwARDwwCAQQFEgYODg0LExAHFBUIFhcYZgY9EgHa",
+    "6+p7/Bm2HgAAAODTEQMAAAAADgMBAAABCQ0CAAkMAgAAAEANAwAAAAAAAA=="
+  ],
+  "sha256": "b67136165476720e0b35921d93188253cf5a246241ded8029b0de90445358bea"
+}

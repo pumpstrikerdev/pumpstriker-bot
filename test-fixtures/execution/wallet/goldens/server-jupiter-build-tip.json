@@ -1,0 +1,23 @@
+{
+  "_about": "Server-path golden: the serialized message jupSwap signs on the /swap/v2/build path, recorded before the extraction into jupiter-ix.ts. Keys are fixtureKey(i) indices.",
+  "case": "server-jupiter-build-tip",
+  "inputs": {
+    "signerSeed": "sha256(\"ps-fixture-w5-signer\")",
+    "blockhash": "sha256(\"ps-fixture-w5-blockhash\")",
+    "call": "jupSwap(signer, quote {WSOL -> mint 31, 0.05 SOL, 300 bps}, antiMev true, 100000, awaitConfirm false), tip account = first of the table"
+  },
+  "messageB64": [
+    "gAEABgpB0g8GzJgp1cPOQndoy3cCUipMvVjVHA2nXOwVFBpRubtBsW1jrqAd",
+    "Z8EfrppAPtMhnY75OyZTmhgo1tg8ZXEuFGEvmWikVMhRKa/COBs71WZ8W6i/",
+    "EAIIhdU4Maf8MbEu7nuJKk74pEqr+XDMDjfq9yZ2dRcMHWmc0xJ0SWxUPwMG",
+    "Rm/lIRcy/+ytunLDm+e8jOW7xfcSayxDmzpAAAAAjJclj04kifG7PRApFI4N",
+    "gwtaE5na/xCEBI572Nvp+FkGm4hX/quBhPtof2NGGMA12sQ53BrrO1WYoPAA",
+    "AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABt324ddloZPZ",
+    "y+FGzut5rBy0he1fWzeROoz1hX7/AKk6nGQyFTzzOcnt9t4DAAUWukg58clz",
+    "pRyMtFtAxpoE0z/WInZdoITTX4ByhYvlEfZU2CQC5So0Ug4rYiRkec2rCAQA",
+    "BQJADQMABAAJA4gTAAAAAAAABQYAAQAGBwgBAQcCAAEMAgAAAIDw+gIAAAAA",
+    "CAEBAREJBggAAQIKCwkBAgMEBQYHCAkHAgADDAIAAABADQMAAAAAAAgDAQAA",
+    "AQkBbKEwp9LvyOby/lT2ngERtOJEH1wfwWePQAOblpRKIAcBAAEB"
+  ],
+  "sha256": "78df934f545502c8e9e6e0017b56d985ecefc6d0fd7aa0f7ea0dc2eac50a70af"
+}

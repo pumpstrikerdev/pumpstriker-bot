@@ -1,0 +1,32 @@
+{
+  "_about": "Server-path golden (FIX-PUMP, 2026-11-06): the serialized message the PF-direct route signs for pump's 2026-04-28 layout (buy_exact_sol_in 18 accounts and 25 bytes, sell 16 accounts), Math.random pinned to 0 (fee recipient [0] of its list, buyback recipient [0], Sender tip account 1). Keys are fixtureKey(i) indices (base58 of sha256 of \"ps-fixture-\" + i, computed at test time); pump's fixed accounts are pinned against mainnet by pump-chain-layout.test.ts.",
+  "case": "server-pump-buy",
+  "inputs": {
+    "signerSeed": "sha256(\"ps-fixture-w5-signer\")",
+    "blockhash": "base58(sha256(\"ps-fixture-w5-blockhash\"))",
+    "mintKey": 31,
+    "creatorKey": 3,
+    "call": "pumpfunBuy(signer, mint, 0.05, 300, 100000, antiMev false)",
+    "curve": "166 bytes, SOL (zero key), classic Token mint"
+  },
+  "messageB64": [
+    "gAEADBRB0g8GzJgp1cPOQndoy3cCUipMvVjVHA2nXOwVFBpRuaAscBM0rkY7",
+    "ggsVpJtfg14XeQ1/OyTApE0SYbN67iEnSsL40N1cvJfjKJwZfLUGKlTz2Va5",
+    "zm5RFfllZ6pcs+ZA4MXGMQJ1OtlSE3s0ka/DStP8QR5RgCWgs/G89BcZG7WD",
+    "AjgFeg2QRWiYXakFdNDH/3wEnH+IDdKOvNqIjMcElzi1Qh6z0Q48L8QvSz3n",
+    "6nSX2NUgvXA6aYloUsBPybdGsV16g65NtXpXuIhVNC+d9RE58ydN09cDG+7t",
+    "Zb+jzUOeZRDAPWX62THonQS+C7cNUZcfUcQV+zRMB9tBnyEiAwZGb+UhFzL/",
+    "7K26csOb57yM5bvF9xJrLEObOkAAAACMlyWPTiSJ8bs9ECkUjg2DC1oTmdr/",
+    "EIQEjnvY2+n4WYXYohSG5u7WzX09CMZif0Qa0yDWvkJeFM9hQCISjORHAAAA",
+    "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG3fbh12Whk9nL4UbO63ms",
+    "HLSF7V9bN5E6jPWFfv8AqQFW4PaTZlrPRNsVaL8XW6pRicuX9dL/O2VdK7b9",
+    "bRiwOoZeae4PVIDKvPZjV+TcLxjVjUXB6nSJ+zcj2Xk8cqas8TbrAfwcTog9",
+    "I8i1hEq1mjf2at1XxemsO1PgWdNcZPoJEaVIY0EtYx9OB4cDKWwDXw0TM6DZ",
+    "yIONc7cQ/m4tb5q0pPGVjcCpyUw/tywHmVhD7aSF46JPEMaTmfgZlA8MNf+p",
+    "BVqOVo2o97wHVhUnTPHJLKQfQACcUWqkFMJ8cH2moitZGqUMdeBdB6WvoqP8",
+    "qZk2EuN8kXJnizW6WeEnP9Yidl2ghNNfgHKFi+UR9lTYJALlKjRSDitiJGR5",
+    "zasECAAFAkANAwAIAAkDoIYBAAAAAAAJBgABAAoLDAEBDRIOAgoDBAEACwwF",
+    "Dw0QBhESEwcZOPx0CJ7fzV+A8PoCAAAAAI0i4D6OAQAAAQA="
+  ],
+  "sha256": "4623bb7706c7eaa1f145860f92016691388a35ce24cc4bed5e57650b8e65c396"
+}

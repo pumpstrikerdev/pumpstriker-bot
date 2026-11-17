@@ -1,0 +1,4 @@
+{
+  "note": "Fixtures of the bot link, intake and Telegram tests (R1-B1). Valid contract v1 events copied from the Engine contract fixtures without their unknown keys; now is the validator clock of every fixture.",
+  "now": 1790004000000
+}

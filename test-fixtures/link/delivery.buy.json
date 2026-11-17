@@ -1,0 +1,27 @@
+{
+  "v": 1,
+  "type": "delivery.buy",
+  "event_id": "01JC8K3M5N7P9Q2R4S6T8V0W7X",
+  "signal_id": "dec_0123456789abcdefghjkmnpqr",
+  "ca": "ttFbypXwcXGc3ybAM7id8fW3Bi4dgKaAxAf1MTmYpump",
+  "emitted_at": 1790003999960,
+  "attempt": 1,
+  "payload": {
+    "status": "dry_run",
+    "reason": "dry_run",
+    "arm": "BS",
+    "tx": null,
+    "error": null,
+    "at": 1790003999960,
+    "stamps": {
+      "received_at": 1790003999100,
+      "decided_at": 1790003999120,
+      "signed_at": null,
+      "submitted_at": null,
+      "confirmed_at": null
+    },
+    "route": "pf-direct",
+    "sol_in_lamports": "50000000",
+    "quote_tokens_out": "1666666000000"
+  }
+}

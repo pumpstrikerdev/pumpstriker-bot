@@ -1,0 +1,36 @@
+{
+  "v": 1,
+  "type": "bot.heartbeat",
+  "event_id": "01JC8K3M5N7P9Q2R4S6T8V0WBX",
+  "signal_id": null,
+  "ca": null,
+  "emitted_at": 1790003999995,
+  "attempt": 1,
+  "payload": {
+    "at": 1790003999995,
+    "contract_v": 1,
+    "policy_versions": {
+      "EA": "a1b2c3d4e5f60718"
+    },
+    "autobuy": {
+      "enabled": true,
+      "mode": "dry_run",
+      "arm": "BS",
+      "report_id": null,
+      "confirmed_at": null,
+      "dry_run": true,
+      "paused": null
+    },
+    "caps_used": {
+      "hour": 0,
+      "day": 1,
+      "sol_day": 0.05
+    },
+    "open_positions": 1,
+    "tg_min_grade": "B",
+    "outbox_backlog": 0,
+    "rpc_ok": true,
+    "dead_lettered": 0,
+    "dead_last_code": null
+  }
+}

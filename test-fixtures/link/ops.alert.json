@@ -1,0 +1,16 @@
+{
+  "v": 1,
+  "type": "ops.alert",
+  "event_id": "01JC8K3M5N7P9Q2R4S6T8V0W5X",
+  "signal_id": null,
+  "ca": null,
+  "emitted_at": 1790003999800,
+  "attempt": 1,
+  "payload": {
+    "alarm_id": "feed-dark",
+    "severity": "red",
+    "text": "GMGN feed dark for 3 min",
+    "since": 1790003820000,
+    "cleared_at": null
+  }
+}

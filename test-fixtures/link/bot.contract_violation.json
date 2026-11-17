@@ -1,0 +1,14 @@
+{
+  "v": 1,
+  "type": "bot.contract_violation",
+  "event_id": "01JC8K3M5N7P9Q2R4S6T8V0WCX",
+  "signal_id": null,
+  "ca": null,
+  "emitted_at": 1790003999995,
+  "attempt": 1,
+  "payload": {
+    "code": "invalid",
+    "detail": "entry price must be a finite number above 0",
+    "offending_event_id": "01JC8K3M5N7P9Q2R4S6T8V0W1X"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "v": 1,
+  "type": "arms.status",
+  "event_id": "01JC8K3M5N7P9Q2R4S6T8V0W4X",
+  "signal_id": null,
+  "ca": null,
+  "emitted_at": 1790003999800,
+  "attempt": 1,
+  "payload": {
+    "arms": [
+      {
+        "arm": "BS",
+        "registered_at": 1789917600000,
+        "registry_sha": "registry-sha-1",
+        "verdict": "PASS",
+        "n_matured": 12,
+        "days": 3.5,
+        "look": 1,
+        "lcb_token": 0.021,
+        "lcb_day": 0.015,
+        "report_id": "report-0001",
+        "evaluated_at": 1790003940000
+      },
+      {
+        "arm": "B0",
+        "registered_at": 1789917600000,
+        "registry_sha": "registry-sha-2",
+        "verdict": "INSUFFICIENT",
+        "n_matured": 13,
+        "days": 3.5,
+        "look": 0,
+        "lcb_token": null,
+        "lcb_day": null,
+        "report_id": null,
+        "evaluated_at": 1790003940000
+      },
+      {
+        "arm": "B1",
+        "registered_at": 1789917600000,
+        "registry_sha": "registry-sha-3",
+        "verdict": "INSUFFICIENT",
+        "n_matured": 14,
+        "days": 3.5,
+        "look": 0,
+        "lcb_token": null,
+        "lcb_day": null,
+        "report_id": null,
+        "evaluated_at": 1790003940000
+      },
+      {
+        "arm": "B2",
+        "registered_at": 1789917600000,
+        "registry_sha": "registry-sha-4",
+        "verdict": "INSUFFICIENT",
+        "n_matured": 15,
+        "days": 3.5,
+        "look": 0,
+        "lcb_token": null,
+        "lcb_day": null,
+        "report_id": null,
+        "evaluated_at": 1790003940000
+      }
+    ]
+  }
+}

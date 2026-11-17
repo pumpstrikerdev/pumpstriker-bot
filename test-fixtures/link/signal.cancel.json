@@ -1,0 +1,19 @@
+{
+  "v": 1,
+  "type": "signal.cancel",
+  "event_id": "01JC8K3M5N7P9Q2R4S6T8V0W2X",
+  "signal_id": "dec_0123456789abcdefghjkmnpqr",
+  "ca": "ttFbypXwcXGc3ybAM7id8fW3Bi4dgKaAxAf1MTmYpump",
+  "emitted_at": 1790003999900,
+  "attempt": 1,
+  "payload": {
+    "reason": "retro_kill",
+    "kills": [
+      "K4",
+      "K9"
+    ],
+    "detected_at": 1790003995000,
+    "detail": "creator balance jumped to 31 percent",
+    "action": "sell_if_held"
+  }
+}

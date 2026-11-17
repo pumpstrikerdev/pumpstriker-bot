@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "ca": "ttFbypXwcXGc3ybAM7id8fW3Bi4dgKaAxAf1MTmYpump",
+  "asOf": 1790003999000,
+  "fields": {
+    "price_usd": {
+      "value": 0.00003,
+      "src": "gmgn.token_info",
+      "as_of": 1790003999000
+    },
+    "mcap_usd": {
+      "value": 30000,
+      "src": "engine.derived",
+      "as_of": 1790003999000
+    },
+    "liq_usd": {
+      "value": 12000,
+      "src": "gmgn.token_info",
+      "as_of": 1790003999000
+    },
+    "symbol": {
+      "value": "CREW",
+      "src": "gmgn.token_info",
+      "as_of": 1790003999000
+    },
+    "name": {
+      "value": "Crew Coin",
+      "src": "gmgn.token_info",
+      "as_of": 1790003999000
+    },
+    "migrated": {
+      "value": false,
+      "src": "engine.derived",
+      "as_of": 1790003999000
+    },
+    "launchpad_status": {
+      "value": 1,
+      "src": "gmgn.token_info",
+      "as_of": 1790003999000
+    },
+    "top10_rate": {
+      "value": null,
+      "src": null,
+      "as_of": null
+    }
+  }
+}

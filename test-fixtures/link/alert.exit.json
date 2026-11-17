@@ -1,0 +1,22 @@
+{
+  "v": 1,
+  "type": "alert.exit",
+  "event_id": "01JC8K3M5N7P9Q2R4S6T8V0W3X",
+  "signal_id": "dec_0123456789abcdefghjkmnpqr",
+  "ca": "ttFbypXwcXGc3ybAM7id8fW3Bi4dgKaAxAf1MTmYpump",
+  "emitted_at": 1790003999900,
+  "attempt": 1,
+  "payload": {
+    "leg": "TP1",
+    "policy": {
+      "id": "EA",
+      "version": "a1b2c3d4e5f60718"
+    },
+    "multiple": 2.05,
+    "peak_multiple": 2.1,
+    "basis": "signal_entry",
+    "price_usd": 0.0000615,
+    "priced_at": 1790003991000,
+    "quote_age_s": 9
+  }
+}

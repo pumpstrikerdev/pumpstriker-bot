@@ -1,0 +1,166 @@
+{
+  "v": 1,
+  "type": "signal.new",
+  "event_id": "01JC8K3M5N7P9Q2R4S6T8V0W1X",
+  "signal_id": "dec_0123456789abcdefghjkmnpqr",
+  "ca": "ttFbypXwcXGc3ybAM7id8fW3Bi4dgKaAxAf1MTmYpump",
+  "emitted_at": 1790003999800,
+  "attempt": 1,
+  "payload": {
+    "decision": {
+      "first_reach_at": 1790003997000,
+      "decided_at": 1790003997500,
+      "recorded_at": 1790003997700,
+      "rules_version": "rules-2026-10-17-a1",
+      "code_version": "5.0.0+abc1234",
+      "line": 85,
+      "confidence": 88.5,
+      "tier": "PP-ULTRA",
+      "ban_window": false,
+      "budget_level": "S1"
+    },
+    "entry": {
+      "price_usd": 0.00003,
+      "mcap_usd": 30000,
+      "mcap_basis": "circ",
+      "priced_at": 1790003996000,
+      "src": "gmgn.token_info",
+      "quote_age_s": 1.5
+    },
+    "token": {
+      "name": "Crew Coin",
+      "symbol": "CREW",
+      "decimals": 6,
+      "total_supply": 1000000000,
+      "launchpad": "pump",
+      "launchpad_status": 1,
+      "launchpad_progress": 0.42,
+      "created_at": 1790003400000,
+      "creator": "gmoZbvRQFZVMrGhYfKVcMgTTrokkVbGiNxFNUgmszeBv"
+    },
+    "venue": {
+      "pool_address": "S6KFwcYKkjxyGsSUMcTXadDAAx9uKCXLSCzAeazpXxBo",
+      "exchange": "pump",
+      "quote_mint": "QuoteMintFixture2222222222222222222222222222",
+      "migrated": false,
+      "as_of": 1790003996500
+    },
+    "market": {
+      "liq_usd": {
+        "value": 12000,
+        "src": "gmgn.token_info",
+        "as_of": 1790003996000
+      },
+      "pool_liq_usd": {
+        "value": 11000,
+        "src": "gmgn.pool_info",
+        "as_of": 1790003996500
+      },
+      "vol_5m_usd": {
+        "value": 8000,
+        "src": "gmgn.token_info",
+        "as_of": 1790003996000
+      },
+      "vol_1h_usd": {
+        "value": 30000,
+        "src": "gmgn.token_info",
+        "as_of": 1790003996000
+      },
+      "chg_5m_pct": {
+        "value": 20,
+        "src": "engine.derived",
+        "as_of": 1790003996000
+      },
+      "chg_1h_pct": {
+        "value": 100,
+        "src": "engine.derived",
+        "as_of": 1790003996000
+      },
+      "holders": {
+        "value": 312,
+        "src": "gmgn.token_info",
+        "as_of": 1790003996000
+      },
+      "age_min": {
+        "value": 10,
+        "src": "engine.derived",
+        "as_of": 1790003996000
+      },
+      "top10_pct": {
+        "value": 28.4,
+        "src": "gmgn.token_info",
+        "as_of": 1790003996000
+      },
+      "creator_hold_pct": {
+        "value": null,
+        "src": null,
+        "as_of": null
+      }
+    },
+    "safety": {
+      "status": "clean",
+      "as_of": 1790003996600,
+      "checked": [
+        "security",
+        "holders"
+      ],
+      "missing": []
+    },
+    "labels": [
+      {
+        "id": "band-10-25k",
+        "rule_version": "1",
+        "value": true,
+        "known": true,
+        "acting": true
+      },
+      {
+        "id": "creator-hold",
+        "rule_version": "1",
+        "value": null,
+        "known": false,
+        "acting": true
+      },
+      {
+        "id": "smart-money-2",
+        "rule_version": "1",
+        "value": true,
+        "known": true,
+        "acting": false
+      }
+    ],
+    "grade": "A",
+    "arms": {
+      "BS": {
+        "eligible": true,
+        "blocked_by": [],
+        "unknown_inputs": []
+      },
+      "B0": {
+        "eligible": false,
+        "blocked_by": [
+          "risk-unknown"
+        ],
+        "unknown_inputs": [
+          "creator-hold"
+        ]
+      },
+      "B1": {
+        "eligible": true,
+        "blocked_by": [],
+        "unknown_inputs": []
+      },
+      "B2": {
+        "eligible": false,
+        "blocked_by": [
+          "band-10-25k"
+        ],
+        "unknown_inputs": []
+      }
+    },
+    "policy": {
+      "id": "EA",
+      "version": "a1b2c3d4e5f60718"
+    }
+  }
+}

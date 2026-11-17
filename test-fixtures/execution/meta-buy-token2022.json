@@ -1,0 +1,27 @@
+{
+  "_provenance": "Synthetic getTransaction result shaped like a mainnet response (json encoding, version 0). R1-B4 had no network access, so the figures are hand-built, not recorded. Addresses are double-brace placeholders (upper-case names) that the test fills with generated keys; no signature is stored (A-20).",
+  "_scenario": "PumpPortal-built buy of a Token-2022 pump.fun mint: 0.10 SOL in, Token-2022 ATA created (extension rent), PumpPortal fee transfer, priority fee",
+  "slot": 310000002,
+  "blockTime": 1760000100,
+  "version": 0,
+  "transaction": {
+    "message": {
+      "accountKeys": ["{{OWNER}}", "{{ATA}}", "{{CURVE}}", "{{CURVE_ATA}}", "{{PUMP_FEE}}", "{{PORTAL_FEE}}", "{{SYSTEM}}", "{{TOKEN_2022_PROGRAM}}", "{{PUMP_PROGRAM}}"]
+    }
+  },
+  "meta": {
+    "err": null,
+    "fee": 105000,
+    "preBalances":  [2000000000, 0, 40000000000, 2074080, 5000000, 7000000, 1, 1, 1],
+    "postBalances": [1897320920, 2074080, 40098000000, 2074080, 6000000, 7500000, 1, 1, 1],
+    "preTokenBalances": [
+      { "accountIndex": 3, "mint": "{{MINT}}", "owner": "{{CURVE}}", "programId": "{{TOKEN_2022_PROGRAM}}", "uiTokenAmount": { "amount": "700000000000000", "decimals": 6, "uiAmount": 700000000, "uiAmountString": "700000000" } }
+    ],
+    "postTokenBalances": [
+      { "accountIndex": 1, "mint": "{{MINT}}", "owner": "{{OWNER}}", "programId": "{{TOKEN_2022_PROGRAM}}", "uiTokenAmount": { "amount": "3300000000", "decimals": 6, "uiAmount": 3300, "uiAmountString": "3300" } },
+      { "accountIndex": 3, "mint": "{{MINT}}", "owner": "{{CURVE}}", "programId": "{{TOKEN_2022_PROGRAM}}", "uiTokenAmount": { "amount": "699996700000000", "decimals": 6, "uiAmount": 699996700, "uiAmountString": "699996700" } }
+    ],
+    "loadedAddresses": { "writable": [], "readonly": [] },
+    "computeUnitsConsumed": 85000
+  }
+}

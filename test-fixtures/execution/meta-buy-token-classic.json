@@ -1,0 +1,27 @@
+{
+  "_provenance": "Synthetic getTransaction result shaped like a mainnet response (json encoding, version 0, maxSupportedTransactionVersion 0). R1-B4 had no network access, so the figures are hand-built, not recorded. Addresses are double-brace placeholders (upper-case names) that the test fills with generated keys; no signature is stored (A-20).",
+  "_scenario": "pf-direct buy of a classic-Token mint: 0.05 SOL in, ATA created, Helius tip, priority fee",
+  "slot": 310000001,
+  "blockTime": 1760000000,
+  "version": 0,
+  "transaction": {
+    "message": {
+      "accountKeys": ["{{OWNER}}", "{{ATA}}", "{{CURVE}}", "{{CURVE_ATA}}", "{{PUMP_FEE}}", "{{TIP}}", "{{SYSTEM}}", "{{TOKEN_PROGRAM}}", "{{PUMP_PROGRAM}}"]
+    }
+  },
+  "meta": {
+    "err": null,
+    "fee": 6000,
+    "preBalances":  [1500000000, 0, 31000000000, 2039280, 5000000, 1000000, 1, 1, 1],
+    "postBalances": [1447754720, 2039280, 31049000000, 2039280, 5500000, 1200000, 1, 1, 1],
+    "preTokenBalances": [
+      { "accountIndex": 3, "mint": "{{MINT}}", "owner": "{{CURVE}}", "programId": "{{TOKEN_PROGRAM}}", "uiTokenAmount": { "amount": "793100000000000", "decimals": 6, "uiAmount": 793100000, "uiAmountString": "793100000" } }
+    ],
+    "postTokenBalances": [
+      { "accountIndex": 1, "mint": "{{MINT}}", "owner": "{{OWNER}}", "programId": "{{TOKEN_PROGRAM}}", "uiTokenAmount": { "amount": "1700000000", "decimals": 6, "uiAmount": 1700, "uiAmountString": "1700" } },
+      { "accountIndex": 3, "mint": "{{MINT}}", "owner": "{{CURVE}}", "programId": "{{TOKEN_PROGRAM}}", "uiTokenAmount": { "amount": "793098300000000", "decimals": 6, "uiAmount": 793098300, "uiAmountString": "793098300" } }
+    ],
+    "loadedAddresses": { "writable": [], "readonly": [] },
+    "computeUnitsConsumed": 60000
+  }
+}

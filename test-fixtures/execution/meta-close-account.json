@@ -1,0 +1,24 @@
+{
+  "_provenance": "Synthetic getTransaction result shaped like a mainnet response (json encoding, version 0). R1-B4 had no network access, so the figures are hand-built, not recorded. Addresses are double-brace placeholders (upper-case names) that the test fills with generated keys; no signature is stored (A-20).",
+  "_scenario": "CloseAccount of an empty classic-Token ATA in its own transaction: the full account balance (rent) goes to the owner, who pays the fee",
+  "slot": 310000004,
+  "blockTime": 1760000300,
+  "version": 0,
+  "transaction": {
+    "message": {
+      "accountKeys": ["{{OWNER}}", "{{ATA}}", "{{COMPUTE_BUDGET}}", "{{TOKEN_PROGRAM}}"]
+    }
+  },
+  "meta": {
+    "err": null,
+    "fee": 5300,
+    "preBalances":  [100000000, 2039280, 1, 1],
+    "postBalances": [102033980, 0, 1, 1],
+    "preTokenBalances": [
+      { "accountIndex": 1, "mint": "{{MINT}}", "owner": "{{OWNER}}", "programId": "{{TOKEN_PROGRAM}}", "uiTokenAmount": { "amount": "0", "decimals": 6, "uiAmount": null, "uiAmountString": "0" } }
+    ],
+    "postTokenBalances": [],
+    "loadedAddresses": { "writable": [], "readonly": [] },
+    "computeUnitsConsumed": 2900
+  }
+}

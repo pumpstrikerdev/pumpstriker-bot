@@ -1,0 +1,110 @@
+{
+  "_about": "A-93g fixture (FIXAB-T01..T06): the subset of the official PumpSwap (pump_amm) and pump IDLs that pumpswap-swap.ts must match. Values are copied from the IDL JSON (seed bytes verbatim) and cross-checked locally with @solana/web3.js findProgramAddressSync and node:crypto sha256.",
+  "checkedAt": "2026-10-26",
+  "sources": [
+    "https://raw.githubusercontent.com/pump-fun/pump-public-docs/main/idl/pump_amm.json",
+    "https://raw.githubusercontent.com/pump-fun/pump-public-docs/main/idl/pump.json",
+    "https://github.com/pump-fun/pump-public-docs/blob/main/docs/PUMP_SWAP_README.md",
+    "https://github.com/pump-fun/pump-public-docs/blob/main/docs/PUMP_SWAP_CREATOR_FEE_README.md",
+    "https://github.com/pump-fun/pump-public-docs/blob/main/docs/FEE_PROGRAM_README.md"
+  ],
+  "programs": {
+    "pump_amm": "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+    "pump": "6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P",
+    "fee_program": "pfeeUxB6jkeY1Hxd7CsFCAjcbHA9rWtchMGdZ6VojVZ",
+    "associated_token_program": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+    "associated_token_program_bytes": [140, 151, 37, 143, 78, 36, 137, 241, 187, 61, 16, 41, 20, 142, 13, 131, 11, 90, 19, 153, 218, 255, 16, 132, 4, 142, 123, 216, 219, 233, 248, 89],
+    "token_program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+    "token_2022_program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+    "system_program": "11111111111111111111111111111111",
+    "wsol_mint": "So11111111111111111111111111111111111111112"
+  },
+  "fixed": {
+    "global_config": "ADyA8hdefvWN2dbGGWFotbzWxrAvLW83WG6QCVXvJKqw",
+    "event_authority": "GS4CU59F31iL7aR2Q8zVS8DRrcRnXX1yjQ66TqNVQnaR",
+    "protocol_fee_recipient": "62qc2CNXwrYqQScmEdiZFFAnJR262PxWEuNQtxfafNgV",
+    "protocol_fee_recipient_token_account": "94qWNrtmfn42h3ZjUZwWvK1MEo9uVmmrBPd2hpNjYDjb",
+    "protocol_fee_recipient_token_account_old_wrong": "94qWNrtmfn42h3ZjUZwWvK1MEo9uVmmrBPd2hpNjYDgK",
+    "global_volume_accumulator": "C2aFPdENg4A2HQsmrd5rTw5TaYBX5Ku887cWjbFKtZpw",
+    "fee_config": "5PHirr8joyTMp9JMm6nW7hNDVyEYdkzDqazxPD7RaTjx"
+  },
+  "seeds": {
+    "pool": [112, 111, 111, 108],
+    "pool_index_migrate": [0, 0],
+    "pool_authority": [112, 111, 111, 108, 45, 97, 117, 116, 104, 111, 114, 105, 116, 121],
+    "creator_vault": [99, 114, 101, 97, 116, 111, 114, 95, 118, 97, 117, 108, 116],
+    "global_volume_accumulator": [103, 108, 111, 98, 97, 108, 95, 118, 111, 108, 117, 109, 101, 95, 97, 99, 99, 117, 109, 117, 108, 97, 116, 111, 114],
+    "user_volume_accumulator": [117, 115, 101, 114, 95, 118, 111, 108, 117, 109, 101, 95, 97, 99, 99, 117, 109, 117, 108, 97, 116, 111, 114],
+    "fee_config": [102, 101, 101, 95, 99, 111, 110, 102, 105, 103],
+    "fee_config_second_seed": [12, 20, 222, 252, 130, 94, 198, 118, 148, 37, 8, 24, 187, 101, 64, 101, 244, 41, 141, 49, 86, 213, 113, 180, 212, 248, 9, 12, 24, 233, 168, 99]
+  },
+  "discriminators": {
+    "buy": [102, 6, 61, 18, 1, 218, 235, 234],
+    "sell": [51, 230, 133, 164, 1, 127, 131, 173],
+    "account_Pool": [241, 154, 109, 4, 17, 177, 109, 188]
+  },
+  "instructions": {
+    "buy": {
+      "args": ["base_amount_out u64", "max_quote_amount_in u64", "track_volume OptionBool"],
+      "accounts": [
+        { "name": "pool", "writable": true, "signer": false },
+        { "name": "user", "writable": true, "signer": true },
+        { "name": "global_config", "writable": false, "signer": false },
+        { "name": "base_mint", "writable": false, "signer": false },
+        { "name": "quote_mint", "writable": false, "signer": false },
+        { "name": "user_base_token_account", "writable": true, "signer": false },
+        { "name": "user_quote_token_account", "writable": true, "signer": false },
+        { "name": "pool_base_token_account", "writable": true, "signer": false },
+        { "name": "pool_quote_token_account", "writable": true, "signer": false },
+        { "name": "protocol_fee_recipient", "writable": false, "signer": false },
+        { "name": "protocol_fee_recipient_token_account", "writable": true, "signer": false },
+        { "name": "base_token_program", "writable": false, "signer": false },
+        { "name": "quote_token_program", "writable": false, "signer": false },
+        { "name": "system_program", "writable": false, "signer": false },
+        { "name": "associated_token_program", "writable": false, "signer": false },
+        { "name": "event_authority", "writable": false, "signer": false },
+        { "name": "program", "writable": false, "signer": false },
+        { "name": "coin_creator_vault_ata", "writable": true, "signer": false },
+        { "name": "coin_creator_vault_authority", "writable": false, "signer": false },
+        { "name": "global_volume_accumulator", "writable": false, "signer": false },
+        { "name": "user_volume_accumulator", "writable": true, "signer": false },
+        { "name": "fee_config", "writable": false, "signer": false },
+        { "name": "fee_program", "writable": false, "signer": false }
+      ]
+    },
+    "sell": {
+      "args": ["base_amount_in u64", "min_quote_amount_out u64"],
+      "accounts": [
+        { "name": "pool", "writable": true, "signer": false },
+        { "name": "user", "writable": true, "signer": true },
+        { "name": "global_config", "writable": false, "signer": false },
+        { "name": "base_mint", "writable": false, "signer": false },
+        { "name": "quote_mint", "writable": false, "signer": false },
+        { "name": "user_base_token_account", "writable": true, "signer": false },
+        { "name": "user_quote_token_account", "writable": true, "signer": false },
+        { "name": "pool_base_token_account", "writable": true, "signer": false },
+        { "name": "pool_quote_token_account", "writable": true, "signer": false },
+        { "name": "protocol_fee_recipient", "writable": false, "signer": false },
+        { "name": "protocol_fee_recipient_token_account", "writable": true, "signer": false },
+        { "name": "base_token_program", "writable": false, "signer": false },
+        { "name": "quote_token_program", "writable": false, "signer": false },
+        { "name": "system_program", "writable": false, "signer": false },
+        { "name": "associated_token_program", "writable": false, "signer": false },
+        { "name": "event_authority", "writable": false, "signer": false },
+        { "name": "program", "writable": false, "signer": false },
+        { "name": "coin_creator_vault_ata", "writable": true, "signer": false },
+        { "name": "coin_creator_vault_authority", "writable": false, "signer": false },
+        { "name": "fee_config", "writable": false, "signer": false },
+        { "name": "fee_program", "writable": false, "signer": false }
+      ]
+    }
+  },
+  "poolType": {
+    "fields": [
+      ["pool_bump", "u8"], ["index", "u16"], ["creator", "pubkey"], ["base_mint", "pubkey"], ["quote_mint", "pubkey"],
+      ["lp_mint", "pubkey"], ["pool_base_token_account", "pubkey"], ["pool_quote_token_account", "pubkey"], ["lp_supply", "u64"],
+      ["coin_creator", "pubkey"], ["is_mayhem_mode", "bool"], ["is_cashback_coin", "bool"], ["virtual_quote_reserves", "i128"],
+      ["creator_fee_bps", "u64"], ["can_edit_creator_fee", "bool"], ["is_holder_reward", "bool"], ["protocol_fees", "u64"], ["creator_fees", "u64"]
+    ]
+  }
+}

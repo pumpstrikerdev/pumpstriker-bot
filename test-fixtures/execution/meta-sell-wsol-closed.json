@@ -1,0 +1,30 @@
+{
+  "_provenance": "Synthetic getTransaction result shaped like a mainnet response (json encoding, version 0 with address-table lookups: the token accounts are in meta.loadedAddresses). R1-B4 had no network access, so the figures are hand-built, not recorded. Addresses are double-brace placeholders (upper-case names) that the test fills with generated keys; no signature is stored (A-20).",
+  "_scenario": "PumpSwap sell of the whole bag: the wSOL account is created and closed INSIDE the transaction (its rent and proceeds flow back to the owner), Helius tip, priority fee",
+  "slot": 310000003,
+  "blockTime": 1760000200,
+  "version": 0,
+  "transaction": {
+    "message": {
+      "accountKeys": ["{{OWNER}}", "{{TIP}}", "{{SYSTEM}}", "{{TOKEN_PROGRAM}}", "{{ATA_PROGRAM}}", "{{AMM_PROGRAM}}"]
+    }
+  },
+  "meta": {
+    "err": null,
+    "fee": 15000,
+    "preBalances":  [1000000000, 1000000, 1, 1, 1, 1, 2039280, 7000000, 0, 2039280, 91002039280],
+    "postBalances": [1079785000, 1200000, 1, 1, 1, 1, 2039280, 7000000, 0, 2039280, 90922039280],
+    "preTokenBalances": [
+      { "accountIndex": 6, "mint": "{{MINT}}", "owner": "{{OWNER}}", "programId": "{{TOKEN_PROGRAM}}", "uiTokenAmount": { "amount": "5000000000", "decimals": 6, "uiAmount": 5000, "uiAmountString": "5000" } },
+      { "accountIndex": 9, "mint": "{{MINT}}", "owner": "{{POOL}}", "programId": "{{TOKEN_PROGRAM}}", "uiTokenAmount": { "amount": "250000000000000", "decimals": 6, "uiAmount": 250000000, "uiAmountString": "250000000" } },
+      { "accountIndex": 10, "mint": "{{WSOL_MINT}}", "owner": "{{POOL}}", "programId": "{{TOKEN_PROGRAM}}", "uiTokenAmount": { "amount": "91000000000", "decimals": 9, "uiAmount": 91, "uiAmountString": "91" } }
+    ],
+    "postTokenBalances": [
+      { "accountIndex": 6, "mint": "{{MINT}}", "owner": "{{OWNER}}", "programId": "{{TOKEN_PROGRAM}}", "uiTokenAmount": { "amount": "0", "decimals": 6, "uiAmount": null, "uiAmountString": "0" } },
+      { "accountIndex": 9, "mint": "{{MINT}}", "owner": "{{POOL}}", "programId": "{{TOKEN_PROGRAM}}", "uiTokenAmount": { "amount": "250005000000000", "decimals": 6, "uiAmount": 250005000, "uiAmountString": "250005000" } },
+      { "accountIndex": 10, "mint": "{{WSOL_MINT}}", "owner": "{{POOL}}", "programId": "{{TOKEN_PROGRAM}}", "uiTokenAmount": { "amount": "90920000000", "decimals": 9, "uiAmount": 90.92, "uiAmountString": "90.92" } }
+    ],
+    "loadedAddresses": { "writable": ["{{ATA}}", "{{FEE_VAULT}}", "{{WSOL_ATA}}", "{{POOL_BASE}}", "{{POOL_QUOTE}}"], "readonly": [] },
+    "computeUnitsConsumed": 110000
+  }
+}

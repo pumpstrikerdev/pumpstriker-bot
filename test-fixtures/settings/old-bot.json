@@ -1,0 +1,274 @@
+{
+  "global": {
+    "antiMev": false,
+    "degenMode": false,
+    "confirmManualBuy": true,
+    "confirmManualSell": false,
+    "autoPnlCard": true,
+    "duplicateBuy": false,
+    "buyKb": [
+      0.05,
+      0.2,
+      0.4
+    ],
+    "sellKb": [
+      20,
+      40,
+      60,
+      100
+    ],
+    "slippageBps": 250,
+    "priorityFee": 90000,
+    "priceImpactAlertBuy": 20,
+    "priceImpactAlertSell": 45,
+    "autoSellOnManualBuy": false,
+    "sellLimitPresets": [],
+    "retryOnSlippage": true,
+    "smartSlippageMax": 1200,
+    "retryMaxAttempts": 2
+  },
+  "signal": {
+    "enabled": true,
+    "minScore": 90,
+    "buyAmount": 0.25,
+    "autoBuyMinScore": 999,
+    "minMcap": null,
+    "maxMcap": 150000,
+    "minLiquidity": null,
+    "maxLiquidity": null,
+    "slippageBps": null,
+    "degenMode": null,
+    "autoSellOnSignal": true,
+    "duplicateBuy": false,
+    "sessionEnabled": true,
+    "sessionPreset": "europe",
+    "sessionStart": "08:00",
+    "sessionEnd": "17:00",
+    "sessionTz": "Europe/London",
+    "scoreTiers": [
+      {
+        "id": "tier0",
+        "label": "⚠️ Risky Play",
+        "emoji": "⚠️",
+        "grade": "C",
+        "minScore": 0,
+        "maxScore": 65,
+        "enabled": true,
+        "presets": [
+          {
+            "type": "tp",
+            "triggerType": "entryPrice",
+            "triggerPct": 100,
+            "balance": 100,
+            "duration": 24
+          },
+          {
+            "type": "sl",
+            "triggerType": "entryPrice",
+            "triggerPct": -5,
+            "balance": 100,
+            "duration": 24
+          },
+          {
+            "type": "tsl",
+            "triggerType": "entryPrice",
+            "triggerPct": -10,
+            "balance": 100,
+            "duration": 24
+          }
+        ]
+      },
+      {
+        "id": "tier1",
+        "label": "🟡 Alpha Signal",
+        "emoji": "🟡",
+        "grade": "B",
+        "minScore": 65,
+        "maxScore": 75,
+        "enabled": true,
+        "presets": [
+          {
+            "type": "tp",
+            "triggerType": "entryPrice",
+            "triggerPct": 20,
+            "balance": 60,
+            "duration": 24
+          },
+          {
+            "type": "sl",
+            "triggerType": "entryPrice",
+            "triggerPct": -20,
+            "balance": 100,
+            "duration": 24
+          }
+        ]
+      },
+      {
+        "id": "tier2",
+        "label": "💚 High Potential",
+        "emoji": "💚",
+        "grade": "B+",
+        "minScore": 75,
+        "maxScore": 82,
+        "enabled": true,
+        "presets": [
+          {
+            "type": "tp",
+            "triggerType": "entryPrice",
+            "triggerPct": 25,
+            "balance": 50,
+            "duration": 48
+          },
+          {
+            "type": "tp",
+            "triggerType": "entryPrice",
+            "triggerPct": 100,
+            "balance": 35,
+            "duration": 48
+          },
+          {
+            "type": "sl",
+            "triggerType": "entryPrice",
+            "triggerPct": -22,
+            "balance": 100,
+            "duration": 24
+          },
+          {
+            "type": "tsl",
+            "triggerType": "entryPrice",
+            "armAfterPct": 50,
+            "triggerPct": -25,
+            "balance": 100,
+            "duration": 48
+          }
+        ]
+      },
+      {
+        "id": "tier3",
+        "label": "💎 Strong Conviction",
+        "emoji": "💎",
+        "grade": "A",
+        "minScore": 82,
+        "maxScore": 88,
+        "enabled": true,
+        "presets": [
+          {
+            "type": "tp",
+            "triggerType": "entryPrice",
+            "triggerPct": 30,
+            "balance": 40,
+            "duration": 48
+          },
+          {
+            "type": "tp",
+            "triggerType": "entryPrice",
+            "triggerPct": 150,
+            "balance": 35,
+            "duration": 48
+          },
+          {
+            "type": "sl",
+            "triggerType": "entryPrice",
+            "triggerPct": -25,
+            "balance": 100,
+            "duration": 24
+          },
+          {
+            "type": "tsl",
+            "triggerType": "entryPrice",
+            "armAfterPct": 80,
+            "triggerPct": -30,
+            "balance": 100,
+            "duration": 48
+          }
+        ]
+      },
+      {
+        "id": "tier4",
+        "label": "🔥 Fire Signal",
+        "emoji": "🔥",
+        "grade": "S",
+        "minScore": 88,
+        "maxScore": 93,
+        "enabled": true,
+        "presets": [
+          {
+            "type": "tp",
+            "triggerType": "entryPrice",
+            "triggerPct": 50,
+            "balance": 35,
+            "duration": 96
+          },
+          {
+            "type": "tp",
+            "triggerType": "entryPrice",
+            "triggerPct": 250,
+            "balance": 35,
+            "duration": 96
+          },
+          {
+            "type": "sl",
+            "triggerType": "entryPrice",
+            "triggerPct": -30,
+            "balance": 100,
+            "duration": 24
+          },
+          {
+            "type": "tsl",
+            "triggerType": "entryPrice",
+            "armAfterPct": 120,
+            "triggerPct": -35,
+            "balance": 100,
+            "duration": 96
+          }
+        ]
+      },
+      {
+        "id": "tier5",
+        "label": "🌙 Moon Shot",
+        "emoji": "🌙",
+        "grade": "S+",
+        "minScore": 93,
+        "maxScore": 101,
+        "enabled": true,
+        "presets": [
+          {
+            "type": "tp",
+            "triggerType": "entryPrice",
+            "triggerPct": 80,
+            "balance": 25,
+            "duration": 96
+          },
+          {
+            "type": "tp",
+            "triggerType": "entryPrice",
+            "triggerPct": 400,
+            "balance": 35,
+            "duration": 96
+          },
+          {
+            "type": "sl",
+            "triggerType": "entryPrice",
+            "triggerPct": -35,
+            "balance": 100,
+            "duration": 24
+          },
+          {
+            "type": "tsl",
+            "triggerType": "entryPrice",
+            "armAfterPct": 200,
+            "triggerPct": -40,
+            "balance": 100,
+            "duration": 96
+          }
+        ]
+      }
+    ],
+    "autoBuyOnUpgrade": false,
+    "autoBuyHotFilter": "hot"
+  },
+  "rebates": {
+    "enabled": false,
+    "address": "FakeRebateAddressForTests1111111111111111"
+  }
+}

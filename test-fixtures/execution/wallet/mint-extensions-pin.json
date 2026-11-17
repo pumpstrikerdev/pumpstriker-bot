@@ -1,0 +1,17 @@
+{
+  "_about": "R8-RDQ1 (A-117 c) the Token-2022 mint layout and the three extensions that make a dashboard BUY of the mint a no-route refusal. wallet-reads.ts MINT_ACCOUNT_TYPE_OFFSET, MINT_ACCOUNT_TYPE_MINT, MINT_EXT_NON_TRANSFERABLE, MINT_EXT_DEFAULT_ACCOUNT_STATE, MINT_EXT_TRANSFER_HOOK and ACCOUNT_STATE_FROZEN equal this file (a test keeps them equal). A sell is never refused by these rules.",
+  "layout": {
+    "baseMintBytes": 82,
+    "accountTypeOffset": 165,
+    "accountTypeMint": 1,
+    "tlvStart": 166,
+    "tlvEntry": "type u16 LE, length u16 LE, value; a type of 0 (Uninitialized) ends the list",
+    "note": "a mint without extensions is exactly the 82 byte base mint; a mint with extensions is padded to the size of a base token account (165 bytes), then the account-type byte, then the TLV entries"
+  },
+  "extensions": [
+    { "name": "DefaultAccountState", "type": 6, "valueBytes": 1, "refusedWhen": "the state byte is 2 (Frozen): every new token account of the mint starts frozen", "frozenState": 2 },
+    { "name": "NonTransferable", "type": 9, "valueBytes": 0, "refusedWhen": "present: the tokens can never be moved" },
+    { "name": "TransferHook", "type": 14, "valueBytes": 64, "refusedWhen": "the program id (bytes 32 to 63 of the value; the first 32 are the authority) is not all zero: a program runs on every transfer" }
+  ],
+  "status": "NOT FETCHED: this build had no network access. The numbers 6, 9 and 14, the account-type offset 165 and the Frozen state value 2 are the ones named by amendment A-117 (c); the value sizes are the spl-token-2022 pod layouts as the author recalls them. Any extension type not listed here does not refuse a buy. Before go-live the owner re-checks each entry against the spl-token-2022 ExtensionType list."
+}

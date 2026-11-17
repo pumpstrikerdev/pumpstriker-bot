@@ -1,0 +1,37 @@
+{
+  "_about": "R7-W5 (A-104, design 7.4 S5) the Jupiter v6 aggregator program (named here, its id is a constant of ext-verify.ts) and the swap instructions the wallet verifier accepts. EXACT-IN ONLY: the exact-out, token-ledger and every other discriminator is refused. ext-verify.ts JUPITER_EXACT_IN_PINS equals this file (a test keeps them equal).",
+  "program": "jupiter",
+  "discriminatorRule": "the first 8 bytes of sha256(\"global:<instruction name>\"), computed locally with node:crypto",
+  "tail": {
+    "_about": "the fixed-size tail of the instruction data, read from the END (the route plan in front of it is variable): in_amount u64, quoted_out_amount u64, slippage_bps u16, platform_fee_bps u8",
+    "bytes": 19,
+    "fields": [
+      { "name": "in_amount", "type": "u64", "offsetFromTail": 0 },
+      { "name": "quoted_out_amount", "type": "u64", "offsetFromTail": 8 },
+      { "name": "slippage_bps", "type": "u16", "offsetFromTail": 16 },
+      { "name": "platform_fee_bps", "type": "u8", "offsetFromTail": 18 }
+    ]
+  },
+  "variants": [
+    {
+      "name": "route",
+      "discriminator": [229, 23, 203, 151, 122, 227, 173, 42],
+      "minAccounts": 9,
+      "positions": { "userTransferAuthority": 1, "userSource": 2, "userDestination": 3, "sourceMint": null, "destinationMint": 5 }
+    },
+    {
+      "name": "shared_accounts_route",
+      "discriminator": [193, 32, 155, 51, 65, 214, 156, 129],
+      "minAccounts": 13,
+      "positions": { "userTransferAuthority": 2, "userSource": 3, "userDestination": 6, "sourceMint": 7, "destinationMint": 8 }
+    }
+  ],
+  "refusedDiscriminators": [
+    { "name": "exact_out_route", "discriminator": [208, 51, 239, 151, 123, 43, 237, 92] },
+    { "name": "shared_accounts_exact_out_route", "discriminator": [176, 209, 105, 168, 154, 125, 69, 62] },
+    { "name": "route_with_token_ledger", "discriminator": [150, 86, 71, 116, 167, 93, 14, 104] },
+    { "name": "shared_accounts_route_with_token_ledger", "discriminator": [230, 121, 143, 80, 119, 159, 106, 170] },
+    { "name": "exact_out_route_with_token_ledger", "discriminator": [132, 126, 159, 164, 221, 211, 188, 207] }
+  ],
+  "positionsStatus": "NOT FETCHED: this build had no network access. The account positions are those of the published Jupiter v6 IDL as recalled by the author; the discriminators above are recomputed by the test. Before go-live the owner re-checks the positions against the published IDL (docs/rebuild/CUTOVER.md wallet line). A wrong position only makes the verifier refuse a real route (fail closed): nothing unsafe is accepted."
+}

@@ -1,0 +1,29 @@
+{
+  "_about": "R7-W5 (A-104, design 7.6) the program error codes that mean 'the price moved beyond your slippage'. A transaction whose failing top-level instruction ran one of these programs with one of these custom error codes is reported as 'price-moved'; every other error is the generic failure text. wallet-reads.ts SLIPPAGE_ERROR_CODES equals this file (a test keeps them equal).",
+  "programs": [
+    {
+      "name": "pump",
+      "program": "pump",
+      "codes": [
+        { "code": 6002, "name": "TooMuchSolRequired" },
+        { "code": 6003, "name": "TooLittleSolReceived" },
+        { "code": 6042, "name": "BuySlippageBelowMinTokensOut" }
+      ]
+    },
+    {
+      "name": "pumpswap",
+      "program": "pumpswap",
+      "codes": [
+        { "code": 6004, "name": "ExceededSlippage" }
+      ]
+    },
+    {
+      "name": "jupiter",
+      "program": "jupiter",
+      "codes": [
+        { "code": 6001, "name": "SlippageToleranceExceeded" }
+      ]
+    }
+  ],
+  "status": "NOT FETCHED: this build had no network access, so the codes were not read from the published IDLs; they are the author's recollection of them. Only codes the author is sure of are listed (an unlisted code falls back to the generic text, which is safe). Before go-live the owner re-checks each entry against the program's published IDL error list (docs/rebuild/CUTOVER.md wallet line)."
+}

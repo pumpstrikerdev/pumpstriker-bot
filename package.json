@@ -1,0 +1,52 @@
+{
+  "name": "pumpstriker-tg-bot",
+  "version": "5.0.0",
+  "private": true,
+  "description": "PumpStriker TG Bot — wallet management, trade execution and position monitoring. Listens on :3748 for signals from the Engine and delivers the cards to Telegram.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pumpstrikerdev/pumpstriker-bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pumpstrikerdev/pumpstriker-bot/issues"
+  },
+  "homepage": "https://github.com/pumpstrikerdev/pumpstriker-bot#readme",
+  "main": "dist/bot/bot.js",
+  "_scripts_note": "Scripts call node_modules entrypoints DIRECTLY instead of the bare `tsx`/`tsc`/`vitest` names. npm's Windows .cmd shims expand %dp0% on a line where `&` is still a live command separator, so any path that contains an ampersand splits mid-string and the binary is never found. Calling the .js/.mjs entrypoint through node skips the shim. These paths are relative, so they keep working if the folder is ever renamed.",
+  "scripts": {
+    "build": "node ./node_modules/typescript/bin/tsc",
+    "start": "node dist/bot/bot.js",
+    "bot": "node ./node_modules/tsx/dist/cli.mjs src/bot/bot.ts",
+    "bot:dev": "node ./node_modules/tsx/dist/cli.mjs watch src/bot/bot.ts",
+    "migrate-positions-v2": "node ./node_modules/tsx/dist/cli.mjs scripts/migrate-positions-v2.ts",
+    "cutover-bot-data": "node ./node_modules/tsx/dist/cli.mjs scripts/cutover-bot-data.ts",
+    "import-old-settings": "node ./node_modules/tsx/dist/cli.mjs scripts/import-old-settings.ts",
+    "typecheck": "node ./node_modules/typescript/bin/tsc --noEmit",
+    "test": "node ./node_modules/vitest/vitest.mjs run",
+    "test:watch": "node ./node_modules/vitest/vitest.mjs",
+    "clean": "node ./node_modules/rimraf/dist/esm/bin.mjs dist"
+  },
+  "dependencies": {
+    "@noble/curves": "^1.9.7",
+    "@solana/web3.js": "^1.98.4",
+    "bs58": "^6.0.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "node-fetch": "^2.7.0",
+    "telegraf": "^4.16.3",
+    "undici": "^7.25.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.0",
+    "@types/node-fetch": "^2.6.11",
+    "rimraf": "^5.0.5",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=20.18.1"
+  }
+}

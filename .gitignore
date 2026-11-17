@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+*.tsbuildinfo
+
+# Environment / secrets
+.env
+.env.local
+.env.*.local
+.env.*
+!.env.example
+# .env backups (e.g. .env.bak-2026-09-29-signal-secret); covered by .env.* too
+.env.bak-*
+
+# Runtime data (NEVER commit — contains encrypted wallets, positions, orders)
+data/wallets.json
+data/positions.json
+data/orders.json
+data/settings.json
+data/circuit-breaker.json
+data/sent-signals-dedup.json
+data/*.backup-*
+# 2026-09-29 security hardening: wallet-upgrade backups, atomic-write temp
+# files and the persisted auto-buy cap counters (all already under data/*;
+# listed so they stay ignored if that rule ever changes)
+data/*.bak-*
+data/*.tmp
+data/autobuy-caps.json
+data/*
+!data/.gitkeep
+
+# Logs (folder marker kept, contents ignored)
+logs/*
+!logs/.gitkeep
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

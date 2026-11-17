@@ -1,0 +1,16 @@
+{ "schema": 1,
+  "policies": {
+    "EA": { "basis": "first_quote_after_fill",
+      "legs": [
+        { "id": "R0",  "kind": "hard_rug",    "drop_pct": 40, "max_gap_s": 15, "sell": "all", "protective": true },
+        { "id": "S",   "kind": "rug_stop",    "at_multiple": 0.62, "while_peak_below": 1.5, "sell": "all", "protective": true },
+        { "id": "TP1", "kind": "take_profit", "at_multiple": 2.0, "sell_fraction_of_original": 0.30 },
+        { "id": "TP2", "kind": "take_profit", "at_multiple": 3.0, "sell_fraction_of_original": 0.30 },
+        { "id": "TP3", "kind": "take_profit", "at_multiple": 5.0, "sell_fraction_of_original": 0.20 },
+        { "id": "T",   "kind": "trail", "arm_peak_multiple": 1.5, "exit_at_peak_fraction": 0.60, "sell": "all", "protective": true },
+        { "id": "H",   "kind": "max_hold", "after_ms": 21600000, "sell": "all", "protective": true } ],
+      "evaluation_order": ["R0","S","TP1","TP2","TP3","T","H"], "close_account_on_full_exit": true },
+    "EA-C1": { "extends": "EA", "extra_legs": [ { "id": "C1", "kind": "no_ignition", "after_ms": 1800000, "while_peak_below": 1.5, "below_multiple": 1.0, "sell": "all", "protective": true } ],
+      "evaluation_order": ["R0","S","C1","TP1","TP2","TP3","T","H"] },
+    "HOLD-1H": { "basis": "first_quote_after_fill", "legs": [ { "id": "H", "kind": "max_hold", "after_ms": 3600000, "sell": "all", "protective": true } ],
+      "evaluation_order": ["H"], "close_account_on_full_exit": true } } }
